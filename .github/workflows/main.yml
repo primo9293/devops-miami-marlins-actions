@@ -1,14 +1,18 @@
-name: Hola mundo
+name: "Miami"
+
 on:
-  push:
-    branches: [ main ]
+    push:
+        branches:
+            - "main"
+
 jobs:
-  Mi-primer-job:
-    name: Mi primer jobM
-    runs-on: ubuntu-latest
-    steps:
-    - name: Imprimir 
-      env:
-        MI_VARIABLE: Hola mundo GitHub main DevOps
-      run: |
-        echo $MI_VARIABLE.
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            -   name: checkout repository
+                uses: actions/checkout@v2
+
+            -   name: Saludar
+                run: |
+                    echo "Hola Mundo Team Miami Marlins"
