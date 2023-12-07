@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: foo
-        uses: primo9293/devops-miami-marlins-actions@v1
+        uses: primo9293/devops-miami-marlins-actions
         with:
           who-to-greet: 'Hello team DevOps Miami'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
