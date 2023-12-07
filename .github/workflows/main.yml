@@ -1,7 +1,7 @@
 name: Hola mundo
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 jobs:
   Mi-primer-job:
     name: Mi primer job
@@ -9,6 +9,6 @@ jobs:
     steps:
     - name: Imprimir 
       env:
-        MI_VARIABLE: Hola mundo
+        MI_VARIABLE: Hola mundo GitHub main DevOps
       run: |
         echo $MI_VARIABLE.
