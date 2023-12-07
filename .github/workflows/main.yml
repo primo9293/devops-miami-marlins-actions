@@ -1,9 +1,9 @@
-name: "Miami"
+name: "Pipeline"
 
 on:
     push:
         branches:
-            - "main"
+            - "*"
 
 jobs:
     build:
@@ -15,4 +15,4 @@ jobs:
 
             -   name: Saludar
                 run: |
-                    echo "Hola Mundo Team Miami Marlins"
+                    echo "Hola Mundo"
