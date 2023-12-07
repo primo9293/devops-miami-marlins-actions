@@ -9,6 +9,6 @@ jobs:
     steps:
     - name: Imprimir 
       env:
-        MI_VARIABLE: Hola mundo
+        MI_VARIABLE: Hola mundo GitHub qa DevOps
       run: |
         echo $MI_VARIABLE.
